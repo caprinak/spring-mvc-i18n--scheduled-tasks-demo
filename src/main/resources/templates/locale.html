@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Internationalization</title>
+</head>
+<body>
+<div style="text-align: right;padding:5px;margin:5px 0px;background:#ccc;">
+    <a th:href="@{/locale?lang=en}">Login (English)</a>
+    &nbsp;|&nbsp;
+    <a th:href="@{/locale?lang=fr}">Login (French)</a>
+    &nbsp;|&nbsp;
+    <a th:href="@{/locale?lang=vi}">Login (Vietnamese)</a>
+</div>
+<h1 th:text = "#{welcome.text}"></h1>
+</body>
+</html>
